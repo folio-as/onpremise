@@ -284,6 +284,17 @@ ENV_CONFIG_MAPPING = {
     'SENTRY_GOOGLE_CLIENT_ID': 'auth-google.client-id',
     'SENTRY_GOOGLE_CLIENT_SECRET': 'auth-google.client-secret',
 
+    'SENTRY_SLACK_CLIENT_ID': 'slack.client-id',
+    'SENTRY_SLACK_CLIENT_SECRET': 'slack.client-secret',
+    'SENTRY_SLACK_VERIFICATION_TOKEN': 'slack.verification-token',
+
+    'SENTRY_GITHUB_APP_ID': 'github-app.id',
+    'SENTRY_GITHUB_APP_NAME': 'github-app.name',
+    'SENTRY_GITHUB_APP_WEBHOOK_SECRET': 'github-app.webhook-secret',
+    'SENTRY_GITHUB_APP_PRIVATE_KEY': 'github-app.private-key',
+    'SENTRY_GITHUB_APP_CLIENT_ID': 'github-app.client-id',
+    'SENTRY_GITHUB_APP_CLIENT_SECRET': 'github-app.client-secret',
+
     'SENTRY_EMAIL_PASSWORD': 'mail.password',
     'SENTRY_EMAIL_USER': 'mail.username',
     'SENTRY_EMAIL_PORT': ('mail.port', Int),
