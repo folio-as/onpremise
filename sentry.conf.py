@@ -278,6 +278,12 @@ SENTRY_WEB_OPTIONS = {
 # enable more "smart" configuration.
 
 ENV_CONFIG_MAPPING = {
+    # Avoid empty DSN: https://github.com/getsentry/sentry/issues/12813
+    'SENTRY_URL_PREFIX': 'system.url-prefix',
+
+    'SENTRY_GOOGLE_CLIENT_ID': 'auth-google.client-id',
+    'SENTRY_GOOGLE_CLIENT_SECRET': 'auth-google.client-secret',
+
     'SENTRY_EMAIL_PASSWORD': 'mail.password',
     'SENTRY_EMAIL_USER': 'mail.username',
     'SENTRY_EMAIL_PORT': ('mail.port', Int),
